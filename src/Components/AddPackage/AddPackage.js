@@ -12,7 +12,7 @@ const AddPackage = () => {
       info: detailsRef.current.value,
       image: imgRef.current.value,
     };
-    fetch("http://localhost:5000/packages", {
+    fetch("https://rocky-everglades-33636.herokuapp.com/packages", {
       method: "POST",
       headers: {
         "content-type": "application/json",

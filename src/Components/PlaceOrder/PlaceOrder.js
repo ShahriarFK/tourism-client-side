@@ -11,7 +11,7 @@ const PlaceOrder = () => {
   const dateRef = useRef();
   const ticketRef = useRef();
   useEffect(() => {
-    fetch("http://localhost:5000/packages")
+    fetch("https://rocky-everglades-33636.herokuapp.com/packages")
       .then((res) => res.json())
       .then((data) => setPackages(data));
   }, []);
@@ -27,7 +27,7 @@ const PlaceOrder = () => {
       packageImg: singlePackage?.image,
       status: "Pending",
     };
-    fetch("http://localhost:5000/bookings", {
+    fetch("https://rocky-everglades-33636.herokuapp.com/bookings", {
       method: "POST",
       headers: {
         "content-type": "application/json",

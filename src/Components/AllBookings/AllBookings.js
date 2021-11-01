@@ -4,7 +4,7 @@ import AllBooking from "../AllBooking/AllBooking";
 const AllBookings = () => {
   const [allBookings, setAllBookings] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/bookings")
+    fetch("https://rocky-everglades-33636.herokuapp.com/bookings")
       .then((res) => res.json())
       .then((data) => setAllBookings(data));
   }, []);
@@ -13,7 +13,7 @@ const AllBookings = () => {
       "Are you sure, you want to delete this package?"
     );
     if (confirmLog) {
-      fetch(`http://localhost:5000/bookings/${id}`, {
+      fetch(`https://rocky-everglades-33636.herokuapp.com/bookings/${id}`, {
         method: "DELETE",
       })
         .then((res) => res.json())
@@ -28,7 +28,7 @@ const AllBookings = () => {
     }
   };
   const handleApproveBtn = (id) => {
-    fetch(`http://localhost:5000/bookings/${id}`, {
+    fetch(`https://rocky-everglades-33636.herokuapp.com/bookings/${id}`, {
       method: "PUT",
     })
       .then((res) => res.json())
