@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Travel-Man Travel Agency
+
+Project's live site link : [Click here](https://github.com/facebook/create-react-app).
+
+## Description about this project : 
+
+* This is a travel agency related website.
+* People can visit and get their desired tour packages and can book them using personal gmail id.
+* This project is created with react,react-router,firebase,react-router-dom,node-js etc
+* The data from user is storing in the mongoDB server so that user can get his information from any device just after login to his gmail accout.
+* All over the project is a demo version of practical project as a practise purpose.Thank you.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
